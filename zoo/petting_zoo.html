@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Petting Zoo</title>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <style>
+            body {
+				margin: 0;
+                background-size: cover;
+                font-family: 'League Spartan', sans-serif;
+                background: rgba(170,170,170, 0.3);
+            }
+			.navbar {
+  				overflow: hidden;
+				font-family: Raleway;
+  				background-color: #2d2d2d;
+			}
+			.navbar a {
+ 				float: left;
+  				color: #ffffff;
+  				text-align: center;
+  				padding: 14px 16px;
+  				font-size: 16px;
+				text-decoration:none;
+			}
+			.navbar a:hover {
+  				background-color: #000000;
+			}
+			.navbar a.active {
+  				background-color: #38bacf;
+ 				color: white;
+			}
+			.heading {
+                margin: 60px 0 0 25px;
+				text-align: center;
+                font-size: 64px;
+                color: #38bacf;
+                animation: fade-in 1s;
+            }
+            .heading2 {
+                margin: 40px 0 0 25px;
+                font-size: 48px;
+                color: #2d2d2d;
+                animation: fade-in 2s;
+            }
+			.imagefade {
+                position: relative;
+                margin: 40px 0 0 25px;
+                border-radius: 25px;
+                animation: fade-in 2.5s;
+            }
+            .paragraphstyle {
+                margin: 25px 0 0 25px;
+				text-align: center;
+                font-size: 18px;
+                color: #2d2d2d;
+                animation: fade-in 2.5s;
+            }
+			.images {
+                position: relative;
+                margin: 40px 0 0 80px;
+                border-radius: 25px;
+                animation: fade-in2 2.5s;
+            }
+			.imagediv {
+				text-align: center;
+			}
+			.table1 {
+				border-collapse: collapse;
+				margin: 10px 0;
+				font-family: 'Raleway', sans-serif;
+				font-size: 24px;
+				min-width: 400px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				animation: fade-in2 2s;
+			}
+			.table1 th, td {
+				padding: 10px 15px;
+			}
+			p.footer {
+				position: relative;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				font-family: Raleway, sans-serif;
+				font-size: 16px;
+				opacity: 0.5;
+				animation: fade-in2 5s;
+			}
+			#ralewayfont {
+				font-family: Raleway, sans-serif;
+			}
+			@keyframes fade-in {
+				from {
+					opacity: 0.2;
+				}
+				to {
+					opacity: 1;
+				}
+			@keyframes fade-in2 {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 0.5;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="home.html">Home</a>
+			<a href="about_us.html">About Us</a>
+			<a class="active" href="petting_zoo.html">Petting Zoo</a>
+		</div>
+		<div>
+			<h1 class="heading">Petting Zoo</h1>
+			<p class="paragraphstyle" id="ralewayfont">This is the page for our petting zoo. Find out what times our petting zoo is open, so you and your kids can interact with our amazing animals.</p>
+		</div>
+		<div class="imagediv">
+			<img class="images" src="images/goatspettingzoo.jpg" width="500">
+		</div>
+		<div>
+			<table class="table1">
+				<thead>
+					<tr>
+						<th>Animals</th>
+						<th>Day</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sheep</td>
+						<td>Mon-Fri</td>
+						<td>11-3pm</td>
+					</tr>
+					<tr>
+						<td>Goats</td>
+						<td>Mon-Fri</td>
+						<td>11-3pm</td>
+					</tr>
+					<tr>
+						<td>Llamas</td>
+						<td>Mon-Fri</td>
+						<td>10-5pm</td>
+					</tr>
+					<tr>
+						<td>Pigs</td>
+						<td>Mon-Fri</td>
+						<td>10-4pm</td>
+					</tr>
+					<tr>
+						<td>Donkeys</td>
+						<td>Mon-Fri</td>
+						<td>10-4pm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<p class="footer">by Steven Batts</p>
+		</div>
+	</body>
+</html>

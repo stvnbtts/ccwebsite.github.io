@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menu - OMGDonuts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="icon/donut%20icon.png">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		body {
+				margin: 0;
+                background-color: rgb(255, 224, 255);
+                background-size: cover;
+				background:rgba(235, 172, 231, 0.3);
+		}
+		.navigationbar {
+  				overflow: hidden;
+				font-family: Raleway;
+  				background-color: #2d2d2d;
+		}
+		.navigationbar a {
+ 				float: left;
+  				color: #ffffff;
+  				text-align: center;
+  				padding: 14px 16px;
+  				font-size: 16px;
+		}
+		.navigationbar a:hover {
+  				background-color: #747474;
+		}
+		.navigationbar a.active {
+  				background-color: #ff8af8;
+ 				color: white;
+		}
+		.table1 {
+			border-collapse: collapse;
+			margin: 10px 0;
+			font-family: 'League Spartan', sans-serif;
+			font-size: 24px;
+			box-shadow: 0px 0px 10px #2d2d2d2c;
+			min-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			animation: slide-up 2s;
+		}
+		.table1 thead tr {
+			background-color: #ff8af8;
+			text-align: left;
+			color: #ffffff;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+		}
+		.table1 th, td {
+			padding: 12px 15px;
+		}
+		.table1 tbody tr {
+			border-bottom: 1px solid #d6d6d6;
+		}
+		.table1 tbody tr:nth-of-type(odd) {
+			background-color: #ffffff;
+		}
+		.table1 tbody tr:nth-of-type(even) {
+			background-color: #f3f3f3;
+		}
+		.table1 tbody tr:hover {
+			background-color: aliceblue;
+		}
+		.table1 tbody tr.active-row {
+			border-bottom: 2px solid #ff8af8;
+		}
+		.omgdonut{
+			display: block;
+			margin: 15px 0;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			animation: fade-in 5s;
+		}
+
+		@keyframes slide-up {
+                from {
+                    opacity: 0.2;
+                    transform: translateY(300px);
+                }
+
+                to{
+                    opacity: 1;
+                    transform: translatey(0px);
+                }
+            }
+        @keyframes fade-in {
+                from {
+                    opacity: 0;
+                }
+
+                to{
+                    opacity: 1;
+                }
+            }
+
+	</style>
+	<body>
+		<div class="navigationbar">
+			<a>Home</a>
+ 			<a class="active">Menu</a>
+  			<a>About Us</a>
+		</div>
+		<div>
+			<img src="images/omgdonutslogotest.png" class="omgdonut" width="400">
+		</div>
+		<div>
+			<table class="table1">
+				<thead>
+					<tr>
+						<th>Donuts</th>
+						<th>Price</th>
+						<th>Type</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Red Velvet</td>
+						<td>$1.04</td>
+						<td>Cake Donut</td>
+					</tr>
+					<tr  class="active-row">
+						<td>Blueberry</td>
+						<td>$1.04</td>
+						<td>Cake Donut</td>
+					</tr>
+					<tr>
+						<td>Glazed</td>
+						<td>$0.89</td>
+						<td>Yeast</td>
+					</tr>
+					<tr class="active-row">
+						<td>Chocolate</td>
+						<td>$0.94</td>
+						<td>Yeast</td>
+					</tr>
+					<tr>
+						<td>Glazed - Dozen</td>
+						<td>$8.90</td>
+						<td>Dozen</td>
+					</tr>
+					<tr class="active-row">
+						<td>Chocolate - Dozen</td>
+						<td>$9.50</td>
+						<td>Dozen</td>
+					</tr>
+					<tr>
+						<td>Breakfast Burrito</td>
+						<td>$2.50</td>
+						<td>Breakfast</td>
+					</tr>
+					<tr class="active-row">
+						<td>Croissant Sandwich</td>
+						<td>$3.89</td>
+						<td>Breakfast</td>
+					</tr>
+					<tr>
+						<td>Sprite</td>
+						<td>$2.20</td>
+						<td>Beverage</td>
+					</tr>
+					<tr class="active-row">
+						<td>Coke</td>
+						<td>$2.20</td>
+						<td>Yeast</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Us</title>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <style>
+            body {
+				margin: 0;
+                background-size: cover;
+                font-family: 'League Spartan', sans-serif;
+                background: rgba(170,170,170, 0.3);
+            }
+			.navbar {
+  				overflow: hidden;
+				font-family: Raleway;
+  				background-color: #2d2d2d;
+			}
+			.navbar a {
+ 				float: left;
+  				color: #ffffff;
+  				text-align: center;
+  				padding: 14px 16px;
+  				font-size: 16px;
+				text-decoration:none;
+			}
+			.navbar a:hover {
+  				background-color: #000000;
+			}
+			.navbar a.active {
+  				background-color: #38bacf;
+ 				color: white;
+			}
+            .heading {
+                margin: 60px 0 0 80px;
+                font-size: 64px;
+                color: #38bacf;
+                animation: slide-up 1s;
+            }
+            .heading2 {
+                margin: 40px 0 0 80px;
+                font-size: 48px;
+                color: #2d2d2d;
+                animation: slide-up 2s;
+            }
+            .imagefade {
+                position: relative;
+                margin: 40px 0 0 80px;
+                border-radius: 25px;
+                animation: fade-in 2.5s;
+            }
+            .paragraphstyle {
+                margin: 25px 0 0 80px;
+                font-size: 18px;
+                color: #2d2d2d;
+                animation: fade-in 2.5s;
+            }
+			p.footer {
+				position: relative;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				font-family: Raleway, sans-serif;
+				font-size: 16px;
+				opacity: 0.5;
+				animation: fade-in2 5s;
+			}
+			#ralewayfont {
+				font-family: Raleway, sans-serif;
+			}
+            @keyframes slide-up {
+                from {
+                    opacity: 0.2;
+                    transform: translateY(100px);
+                }
+
+                to{
+                    opacity: 1;
+                    transform: translatey(0px);
+                }
+            }
+            @keyframes fade-in {
+                from {
+                    opacity: 0.2;
+                    transform: translateY(100px);
+                }
+
+                to{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+			@keyframes fade-in2 {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 0.5;
+				}
+        </style>
+    </head>
+    <body>
+		<div class="navbar">
+			<a href="home.html">Home</a>
+			<a class="active" href="about_us.html">About Us</a>
+			<a href="petting_zoo.html">Petting Zoo</a>
+		</div>
+        <div>
+            <h1 class="heading"><b>About Us</h1>
+            <p class="heading2"><b>West Arvada Zoo</p>
+        </div>
+        <div>
+            <img class="imagefade" src="images/sleepingfox.jpg" width="800">
+        </div>
+        <div>
+            <p class="paragraphstyle" id="ralewayfont">West Arvada Zoo is a zoo that cares about its animals. We can guarantee that our animals are getting the best care, and are rescued from environments where they couldn't survive on their own. Our zoo has many different animals from exotic animals to animals that you might have seen in your own backyard. Lions, tigers, and bears along with goats, sheep, and pigs, and a variety of squirrels that we did not let in. We also have our famous wildcat, so feel free to post a picture on social media when you go and see him!</p>
+        </div>
+		<div>
+			<p class="footer">by Steven Batts</p>
+		</div>
+    </body>
+</html>
