@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+	margin: 0;
+	text-align: center;
+	background-size: cover;
+	font-family: 'Quicksand', sans-serif;
+	background: #080808;
+}
+a {
+    display: inline-block;
+    position: relative;
+	font-family: 'Poppins', sans-serif;
+	margin: 25px 0 0 0px;
+	font-size: 32px;
+	color: #5ed1ff;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px 10px rgba(35, 229, 255, 0.4);
+	animation: links 2s;
+}
+a:link {
+    text-decoration: none;
+}
+a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9100ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+p {
+	color: white;
+	animation: paragraph 2.5s;
+    font-size: 24px;
+}
+h1 {
+	font-family: 'Poppins', sans-serif;
+	margin: 50px 0 0 0;
+	font-size: 64px;
+	color: #b433ff;
+	letter-spacing: 10px;
+	text-shadow: 1px 1px 10px rgba(215, 161, 231, 0.4);
+	animation: heading 2s;
+}
+div {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#byline {
+    animation: byline 3.5s;
+    font-size: 18px;
+}
+@keyframes heading {
+	from { 
+		transform: translateY(100px);
+		opacity: 0.2;
+		letter-spacing: 5px;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+		letter-spacing: 10px;
+	}
+}
+@keyframes links {
+	from {
+		opacity: 0.2;
+		letter-spacing: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+	}
+	to {
+		opacity: 1;
+		letter-spacing: 5px;
+        margin-top: 25px;
+        margin-top: 25px;
+	}
+}
+@keyframes paragraph {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes byline {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.75;
+	}
+}
